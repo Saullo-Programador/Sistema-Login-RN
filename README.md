@@ -11,11 +11,11 @@ Sistema desenvolvido com React Native e TypeScript usando React Navigation, Reac
           
 ## Comandos necessarios para executar o projeto  
 ```
-$ cd Sistema_Login
+cd Sistema-Login-RN
 ```
 ```
-$ npm install
+npm install
 ```
 ```
-$ npm start
+npm start
 ```
