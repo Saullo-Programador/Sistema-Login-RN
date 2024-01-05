@@ -16,13 +16,13 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: 'bold',
     color: '#FFF',
-    fontSize: 16,
+    fontSize: 24,
   },
   button: {
     backgroundColor: '#550ab1',
     borderRadius: 12,
-    padding: 20,
-    width: '80%',
+    padding: 12,
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
   }

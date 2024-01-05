@@ -17,5 +17,5 @@ $ cd Sistema_Login
 $ npm install
 ```
 ```
-$ npm start
+$ npx expo
 ```

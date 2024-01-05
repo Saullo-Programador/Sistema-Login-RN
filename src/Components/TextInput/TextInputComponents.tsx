@@ -14,10 +14,11 @@ const styles = StyleSheet.create({
         borderColor: '#1d013f',
         paddingHorizontal: 8,
         color: '#000',
-        borderWidth: 1,
-        width: '80%',
+        borderWidth: 2,
+        width: '100%',
         height: 50,
         marginBottom: 16, 
         fontSize: 20,
+        paddingLeft: 20,
     }
 })

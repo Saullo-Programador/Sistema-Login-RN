@@ -3,6 +3,7 @@ import { View, Text } from 'react-native'
 import { TextInputComponents } from '../../Components/TextInput/TextInputComponents'
 import { ButtonComponents } from '../../Components/Button/ButtonComponents'
 import { useAuth } from '../../Context/Auth'
+import { Container } from './styles'
 
 
 export function SignInScreen() {
@@ -12,7 +13,7 @@ export function SignInScreen() {
 
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Container>
 
       <TextInputComponents 
         placeholder='E-mail' 
@@ -28,6 +29,6 @@ export function SignInScreen() {
 
       <ButtonComponents onPress={() => signIn(email, password)} title='Entrar no App'/>
       
-    </View>
+    </Container>
   )
 }
