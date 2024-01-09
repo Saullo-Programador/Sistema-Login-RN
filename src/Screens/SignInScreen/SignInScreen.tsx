@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { View, Text } from 'react-native'
+import React, { useContext, useState } from 'react'
+import { View, Text, Switch } from 'react-native'
 import { TextInputComponents } from '../../Components/TextInput/TextInputComponents'
 import { ButtonComponents } from '../../Components/Button/ButtonComponents'
 import { useAuth } from '../../Context/Auth'
 import { Container } from './styles'
+import { ThemeContext, ThemeType } from '../../Themes/theme'
 
 
 export function SignInScreen() {
@@ -11,10 +12,16 @@ export function SignInScreen() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  const {toggleTheme , theme} = useContext(ThemeContext)
+
+  const isDarkMode = theme === ThemeType.dark
 
   return (
     <Container>
-
+      <Switch 
+        value={isDarkMode} 
+        onValueChange={toggleTheme} 
+      />
       <TextInputComponents 
         placeholder='E-mail' 
         value={email} 

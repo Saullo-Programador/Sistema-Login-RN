@@ -1,4 +1,4 @@
-import styled, { ThemeProps } from "styled-components/native";
+import styled from "styled-components/native";
 
 export const Container = styled.View`
     flex: 1;
@@ -8,5 +8,5 @@ export const Container = styled.View`
     padding-right: 16px;
     padding-top: 16px;
     padding-bottom: 32px;
-    background-color: ${props => props.theme.colors};
+    background-color: ${props => props.theme.colors.background};
 `
