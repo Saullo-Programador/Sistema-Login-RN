@@ -9,7 +9,6 @@ export const SettingScreen = () => {
   return (
     <View style={styles.container}>
         <Text style={styles.title}>Configurações</Text>
-
         <ButtonComponents onPress={signOut} style={{backgroundColor: 'red'}} title='Sair Do App'/>
     </View>
   )
